@@ -2,12 +2,13 @@
 
 void main()
 {
-    int no_row,c=1,blk,i,j;
+    int no,c=1;
+    int k,i,j;
     printf("Input number of rows: ");
-    scanf("%d",&no_row);
-    for(i=0;i<no_row;i++)
+    scanf("%d",&no);
+    for(i=0;i<no;i++)
     {
-        for(blk=1;blk<=no_row-i;blk++)
+        for(k=1;k<=no-i;k++)
         printf("  ");
         for(j=0;j<=i;j++)
         {
