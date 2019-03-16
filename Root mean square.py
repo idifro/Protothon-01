@@ -1,8 +1,11 @@
+
 import math
 import numpy
 
 if __name__=='__main__':
-    arr = list(map(float, input().split(",")))
+    
+    
+    arr = list(map(float, input("Enter the numbers\n").split(",")))
     
     n = len(arr)
     squareplus = 0.00
@@ -10,17 +13,16 @@ if __name__=='__main__':
     rms = 0.00
     
     
+    
     for i in range(0,n):
         squareplus = squareplus + (arr[i]**2)
     
-    print(squareplus)
     
     mean = (squareplus/float(n))
-    print(mean)
     
     rms = math.sqrt(mean)
     
-    
+    print("The Root mean Square value is :")
     print("%.4f" % rms);
 
     
